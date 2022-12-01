@@ -1,10 +1,9 @@
 <template>
-    <div id="app">
+    <div id="nav">
         <router-link to="/">Home</router-link>
         <router-link to="/voucher">vouchers list</router-link>
     
         <div class="container">
-            <h1>Hello people !!!</h1>
             <router-view></router-view>
         </div>
     </div>
