@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (index);
 
 /***/ }),
 
