@@ -1,6 +1,9 @@
 <template>
     <div id="voucher-create">
-        <h1>Create voucher</h1>
+        <div>
+            <h1>Create voucher</h1>
+            <div class="btn btn-group" @click="generateVoucherCode">generate voucher code</div>
+        </div>
         
         <div class="form">
             <input type="text" v-model="name">
@@ -40,6 +43,17 @@ export default {
                 .then(function(response){
                     if(response.status === 201){
                         router.push('/vouchers')
+                    }
+                })
+        },
+        generateVoucherCode(){
+            let vm = this
+            
+            axios
+                .get(store.getters.getURL + '/vouchers/generate-code')
+                .then(function(response){
+                    if(response.status === 200){
+                        vm.name = response.data.name
                     }
                 })
         }
