@@ -6,10 +6,11 @@ services:
         ports:
             - "8080:80"
         volumes:
-            - "./:/var/www/html"
+            - "./backend:/var/www/html"
+            - "./frontend:/var/www/frontend"
 
     gsg_node_server:
-        image: "crgbe/node:14.15-alpine"
+        image: "crgbe/node:19-alpine"
         container_name: gsg_node_server
         ports:
             -   "9090:8080"
@@ -17,7 +18,7 @@ services:
         depends_on:
             -   gsg_apache_server
         volumes:
-            -   "./:/var/www/html"
+            -   "./frontend:/var/www/html"
 
     gsg_mysql_server_57:
         image: mysql:5.7
@@ -29,22 +30,5 @@ services:
         volumes:
             - "gsg_mysql-dbdata:/var/lib/mysql"
 
-###> doctrine/doctrine-bundle ###
-  database:
-    image: postgres:${POSTGRES_VERSION:-14}-alpine
-    environment:
-      POSTGRES_DB: ${POSTGRES_DB:-app}
-      # You should definitely change the password in production
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-!ChangeMe!}
-      POSTGRES_USER: ${POSTGRES_USER:-app}
-    volumes:
-      - db-data:/var/lib/postgresql/data:rw
-      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
-      # - ./docker/db/data:/var/lib/postgresql/data:rw
-###< doctrine/doctrine-bundle ###
-
 volumes:
     gsg_mysql-dbdata:
-###> doctrine/doctrine-bundle ###
-  db-data:
-###< doctrine/doctrine-bundle ###
