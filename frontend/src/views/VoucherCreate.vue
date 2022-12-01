@@ -17,6 +17,7 @@
 import axios from 'axios'
 import store from '@/global/store'
 import router from "@/global/router";
+import { generateVoucherCode } from "@/utils/tools";
 
 export default {
     name: "VoucherCreate",
@@ -48,9 +49,7 @@ export default {
         },
         generateVoucherCode(){
             let vm = this
-            
-            axios
-                .get(store.getters.getURL + '/vouchers/generate-code')
+                generateVoucherCode()
                 .then(function(response){
                     if(response.status === 200){
                         vm.name = response.data.name

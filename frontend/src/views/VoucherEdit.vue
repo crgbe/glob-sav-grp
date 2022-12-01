@@ -1,5 +1,9 @@
 <template>
-    <h1>Edit voucher {{ this.$route.params.id }}</h1>
+    <div>
+        <h1>Edit voucher {{ this.$route.params.id }}</h1>
+        <div class="btn btn-group" @click="generateVoucherCode">generate voucher code</div>
+    </div>
+    
     <div id="voucher-edit">
         <div class="form">
             <input type="text" v-model="name">
@@ -13,6 +17,7 @@
 import axios from 'axios'
 import store from '@/global/store'
 import router from "@/global/router";
+import { generateVoucherCode } from "@/utils/tools";
 
 export default {
     name: "VoucherEdit",
@@ -52,6 +57,15 @@ export default {
                 .then(function(response){
                     if(response.status === 200){
                         router.push('/vouchers')
+                    }
+                })
+        },
+        generateVoucherCode() {
+            let vm = this
+            generateVoucherCode()
+                .then(function (response) {
+                    if (response.status === 200) {
+                        vm.name = response.data.name
                     }
                 })
         }
