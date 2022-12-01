@@ -1,5 +1,7 @@
 <template>
     <div id="voucher-create">
+        <h1>Create voucher</h1>
+        
         <div class="form">
             <input type="text" v-model="name">
             <input type="number" v-model="discount">

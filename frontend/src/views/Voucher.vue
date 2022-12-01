@@ -17,6 +17,7 @@
                 <td>{{ voucher.discount }}</td>
                 <td>
                     <router-link :to="{ name: 'vouchers_show', params: { id: voucher.id }}">Show</router-link>
+                    <router-link :to="{ name: 'vouchers_edit', params: { id: voucher.id }}">Edit</router-link>
                     <div class="btn btn-danger" @click="remove(voucher.id)">Delete</div>
                 </td>
             </tr>
