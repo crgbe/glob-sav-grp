@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c502e991-0c75-4dc5-b420-0bb89a37ff05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Test.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/public/build/vouchers.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/build/vouchers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/Controller/VoucherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/VoucherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/Entity/Voucher.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Entity/Voucher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/global/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Voucher.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Voucher.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -98,11 +103,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/global" />
       <recent name="$PROJECT_DIR$/frontend/src/router" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/backend" />
-      <recent name="$PROJECT_DIR$/assets/vouchers/js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -114,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669822980789</updated>
       <workItem from="1669822982756" duration="24710000" />
-      <workItem from="1669882529164" duration="18466000" />
+      <workItem from="1669882529164" duration="34641000" />
     </task>
     <servers />
   </component>

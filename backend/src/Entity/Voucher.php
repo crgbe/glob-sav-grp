@@ -7,7 +7,7 @@ use App\Repository\VoucherRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: VoucherRepository::class)]
-#[ApiResource]
+#[ApiResource()]
 class Voucher
 {
     #[ORM\Id]
@@ -15,7 +15,7 @@ class Voucher
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, unique: true)]
     private string $name;
 
     #[ORM\Column(nullable: true)]
@@ -26,7 +26,7 @@ class Voucher
         return $this->id;
     }
 
-    public function getName(string $name): ?string
+    public function getName(): ?string
     {
         return $this->name;
     }
