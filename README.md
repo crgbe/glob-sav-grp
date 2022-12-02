@@ -12,4 +12,4 @@ PREREQUISITES:
 * To have tests data to start the project, run "bin/console doctrine:fixtures:load"
 * Access the frontend project at http://localhost:9090
 * Access the api backend swagger documentation at http://localhost:8080/api
-* 
+* On page to create/edit a voucher, click on the button "generate voucher code"

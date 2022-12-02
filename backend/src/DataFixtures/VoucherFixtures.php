@@ -6,6 +6,7 @@ use App\Entity\Voucher;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use App\Utils\Tool;
+
 class VoucherFixtures extends Fixture
 {
     private Tool $tools;
